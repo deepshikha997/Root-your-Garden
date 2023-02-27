@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    {% load static %}
+<!-- Mirrored from templates.hibootstrap.com/guze/default/get-a-quote.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:43 GMT -->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href='{% static "assets/css/bootstrap.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/flaticon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/remixicon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/owl.carousel.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/swiper-min.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/magnific-popup.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/fancybox.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/odometer.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/aos.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/style.css"  %}'>
+<link rel="stylesheet" href='{% static "assets/css/responsive.css"  %}'>
+<title>Root your Garden - Landscaping & Gardening HTML Template</title>
+<link rel="icon" type="image/png" href='{% static "assets/img/favicon.png"  %}'>
+</head>
+<body>
+
+<div class="preloader js-preloader">
+<img src='{% static "assets/img/preloader.gif"  %}' alt="Image">
+</div>
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="page-wrapper">
+
+<header class="header-wrap style1">
+<div class="container">
+<div class="header-top">
+<div class="close-header-top xl-none">
+<button type="button">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="row align-items-center">
+<div class="col-xl-8 col-lg-12">
+<div class="header-top-left">
+<!-- <div class="contact-item">
+<span> <i class="flaticon-call-1"></i></span>
+<a href="tel:8882222288">+888-222-2288</a>
+</div>
+<div class="contact-item">
+<span><i class="flaticon-envelope"></i></span>
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#90f8f5fcfcffd0f7e5eaf5bef3fffd"><span class="__cf_email__" data-cfemail="1b737e7777745b7c6e617e35787476">[email&#160;protected]</span></a>
+</div> -->
+</div>
+</div>
+<div class="col-xl-12 col-lg-12">
+<div class="header-top-right">
+<div class="select-lang">
+<i class="ri-earth-fill"></i>
+<div class="navbar-option-item navbar-language dropdown language-option">
+<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="lang-name"></span>
+</button>
+<div class="dropdown-menu language-dropdown-menu">
+<a class="dropdown-item" href="#">
+<img src="assets/img/uk.png" alt="flag">
+English
+</a> 
+
+</div>
+</div>
+</div>
+<ul class="social-profile style1 list-style">
+<li>
+<a target="_blank" href="https://facebook.com/">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://linkedin.com/">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+
+</ul>
+</div>
+<!-- <a href="get-a-quote.html" class="btn style1 xl-none">Review and feedback <i class="flaticon-right-arrow"></i></a> -->
+</div>
+</div>
+</div>
+<div class="header-bottom">
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="index.html">
+<img class="logo-light" src='{% static "assets/img/logo1.PNG" %}' alt="logo">
+<img class="logo-dark" src='{% static "assets/img/logo-white.png" %}' alt="logo">
+</a>
+<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+<div class="menu-close xl-none">
+<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+</div>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a href="{% url 'index' %}" class="nav-link">
+Home
+<!-- <i class="ri-arrow-down-s-fill"></i> -->
+</a>
+<!-- <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="index.html" class="nav-link">Home One</a>
+</li>
+<li class="nav-item">
+<a href="index-2.html" class="nav-link">Home Two</a>
+</li>
+ <li class="nav-item">
+<a href="index-3.html" class="nav-link">Home Three</a>
+</li>
+</ul> -->
+</li>
+<li class="nav-item">
+<a href="{% url 'abt' %}" class="nav-link">
+About Us
+</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Services
+<!-- <i class="ri-arrow-down-s-fill"></i> -->
+</a>
+<!-- <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="service-one.html" class="nav-link">Service One</a>
+</li>
+<li class="nav-item">
+<a href="service-two.html" class="nav-link">Service Two</a>
+</li>
+<li class="nav-item">
+<a href="service-details.html" class="nav-link">Service Details</a>
+</li>
+</ul> -->
+</li>
+<!--<li class="nav-item">
+<a href="#" class="nav-link">
+Projects
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="project-one.html" class="nav-link">Project One</a>
+</li>
+<li class="nav-item">
+<a href="project-two.html" class="nav-link">Project Two</a>
+</li>
+<li class="nav-item">
+<a href="project-details.html" class="nav-link">Project Details</a>
+</li>
+</ul>
+</li>
+ <li class="nav-item">
+<a href="#" class="nav-link active">
+Pages
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="get-a-quote.html" class="nav-link active">Get A Quote</a>
+</li>
+<li class="nav-item">
+<a href="pricing.html" class="nav-link">Pricing Plan</a>
+</li>
+<li class="nav-item">
+<a href="team.html" class="nav-link">Team</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">FAQ</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">Testimonials</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+User Pages
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="login.html" class="nav-link">Login</a>
+</li>
+<li class="nav-item">
+<a href="register.html" class="nav-link">Register</a>
+</li>
+<li class="nav-item">
+<a href="recover-password.html" class="nav-link">Recover Password</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+</li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+</li>
+<li class="nav-item">
+<a href="error-404.html" class="nav-link">404 Error Page</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog Layout
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-no-sidebar.html" class="nav-link">Blog Grid</a>
+</li>
+<li class="nav-item">
+<a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+</li>
+</ul>
+</li>
+ <li class="nav-item">
+<a href="#" class="nav-link">
+Single Blog
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-details-no-sidebar.html" class="nav-link">Blog Details No Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-left-sidebar.html" class="nav-link">Blog Details Left Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-right-sidebar.html" class="nav-link">Blog Details Right Sidebar</a>
+</li>
+</ul>
+</li>
+</ul>
+</li> -->
+<li class="nav-item">
+<a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+</li>
+</ul>
+
+</div>
+</nav>
+<div class="mobile-bar-wrap">
+<div class="mobile-top-bar xl-none">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<button class="searchbtn xl-none" type="button">
+<i class="flaticon-search-1"></i>
+</button>
+<div class="mobile-menu xl-none">
+<a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+</div>
+</div>
+</div>
+</div>
+<div class="search-area">
+<div class="container">
+<button type="button" class="close-searchbox">
+<i class="ri-close-line"></i>
+</button>
+<form action="#">
+<div class="form-group">
+<input type="search" placeholder="Search Here" autofocus>
+</div>
+</form>
+</div>
+</div>
+</header>
+
+
+<section class="hero-wrap style1 hero-bg-1 bg-f">
+    <div class="content-wrapper">
+    <div class="breadcrumb-wrap">
+    <div class="container">
+    <img src='{% static "assets/img/tub-2.png" %}' alt="Image" class="section-img style2">
+    <div class="row align-items-center">
+    <div class="col-md-7 col-sm-8">
+    <div class="breadcrumb-title">
+    <h2>Customer's Reviews</h2>
+    <ul class="breadcrumb-menu list-style">
+    <li><a href="{% url 'index' %}">Home </a></li>
+    <li>Customer's Reviews</li>
+    </ul>
+    </div>
+    </div>
+    <div class="col-md-5 col-sm-4">
+    <div class="breadcrumb-img">
+    <img src='{% static "assets/img/breadcrumb/breadcrumb-img-6.png" %}'alt="Image">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </section>
+    <section class="Login-wrap ptb-100">
+        <div class="container">
+        <div class="row gx-5 align-items-center">
+        <div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+        <div class="login-form-wrap">
+        <div class="login-header">
+        <h3>Reviews</h3>
+        </div>
+        <div class="login-form">
+        <div class="login-body">
+            <form method="POST"action="{% url 'fd' %}">
+                {% csrf_token %}
+                <div class="row">
+                    {% for i in messages %}
+                    <div class="alert alert-success" role="alert">
+                   {{i}}
+                  </div>
+                  {% endfor %}
+                <div class="col-lg-12 col-md-12">
+                    <div class="form-group">
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-lg-12 col-md-6">
+                    <div class="form-group">
+                    <label><h6>Message <span class="required">*</span></h6></label>
+                    <input type="text" class="form-control" name="comments" >
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="col-lg-12 col-md-6">
+                    <div class="form-group">
+                    <label><h6>Rate <span class="required">*</span></h6></label>
+                    <input type="text" class="form-control" name="rat">
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+    <!-- <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-1.png" alt="" %}'>
+                <div class="info">
+                    <h3>Aman</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">This training organisation is very good for getting good quality project training and
+            improving your programming and thinking skills. I had a very great experience learning at
+            ...........</p>
+    </div> -->
+
+    <!-- <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-2.png" alt="" %}'>
+                <div class="info">
+                    <h3>Rahul</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">A good place for learning and proper knowledge, best teacher in pythone.
+            Institute that provides path to achieve a goal and ambitions.</p>
+    </div> -->
+<!-- 
+    <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-3.png" alt="" %}'>
+                <div class="info">
+                    <h3>Anam Fatima</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">From my point of view ,it was a wonderful experience. If you're looking for summer
+            training institute for your project then definitely you must need to check out Cosmo for once, just
+            need to use your own mind at the pricing of courses and rest of the things are good.</p>
+    </div> -->
+<!-- 
+    <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-4.png" alt="" %}'>
+                <div class="info">
+                    <h3>Riya Sharma</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">Best place for project work and to learn new technologies. The institute which
+            help us to learning the all new courses in a better and an easy manner with well and qualified
+            faculties.😊</p>
+    </div> -->
+
+    <!-- <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-5.png" alt="" %}'>
+                <div class="info">
+                    <h3>Abhimanyu</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">I am Abhimanyu and this training institute teachers guide us and teach us very nicely
+            and the topic they teach very clearly and explain that topic also.The teachers explain the topic
+            like a friend and this is the good quality of this training institute.it is a good training
+            institute.thankyou for guiding us.</p>
+    </div> -->
+<!-- 
+    <div class="box">
+        <div class="student">
+            <div class="student-info">
+                <img src='{% static "images/student-6.png" alt="" %}'>
+                <div class="info">
+                    <h3>Zoha khan</h3>
+                    <span>student</span>
+                </div>
+            </div>
+            <i class="fas fa-quote-right"></i>
+        </div>
+        <p class="text">Best training Institute in lucknow. Trainers are very Corporative and helping. Institute
+            is very good for beginners who want to learn things from scratch.</p>
+    </div> -->
+
+
+
+</form>
+
+
+</div>
+</section>
+<!-- <section class="quote-wrap ptb-100">
+<div class="container">
+<img src='{% static "assets/img/flower-shape-1.png" %}' alt="Image" class="quote-shape-1 lg-none">
+<div class="row gx-5">
+<div class="col-xl-5">
+<div class="content-title style1 mb-30">
+<span>GET IN TOUCH</span>
+<h2>When Plant A Seed, You Plant A Hope</h2>
+</div>
+<div class="contact-box-wrap contact-bg-1 bg-f">
+<div class="overlay bg-timber-green op-8"></div>
+<div class="contact-item">
+<span class="contact-icon"><i class="flaticon-placeholder"></i></span>
+<div class="contact-info">
+<h3>Our Address</h3>
+<p>203 Marigold Lane, Coral Way, New York, USA</p>
+</div>
+</div>
+<div class="contact-item">
+<span class="contact-icon"><i class="flaticon-phone"></i></span>
+<div class="contact-info">
+<h3>Our Phone</h3>
+<a href="tel:1232031230606">+123 203-123-0606</a>
+<a href="tel:8882201230606">+888 220-123-0606</a>
+</div>
+</div>
+<div class="contact-item">
+<span class="contact-icon"><i class="flaticon-email-2"></i></span>
+<div class="contact-info">
+<h3>Our Email</h3>
+<a href="mail:hello@guze.com"><span class="__cf_email__" data-cfemail="1a727f7676755a7d6f607f34797577">[email&#160;protected]</span></a>
+<a href="mail:support@guze.com"><span class="__cf_email__" data-cfemail="80f3f5f0f0eff2f4c0e7f5fae5aee3efed">[email&#160;protected]</span></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col-xl-7">
+<form action="#" class="quote-form">
+<div class="content-title style1 mb-30">
+<h2>Get A Quote</h2>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+ <label for="name">Name*</label>
+<input type="text" name="name" id="name">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="phone">Phone</label>
+<input type="text" name="phone" id="phone">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" name="email" id="email">
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="services">Services*</label>
+<select name="services" id="services">
+<option>Choose Services</option>
+<option value="1">Landscaping</option>
+<option value="2">Pruning Plants</option>
+<option value="3">Commercial Gardening</option>
+</select>
+</div>
+</div>
+<div class="col-lg-12">
+<div class="form-group">
+<label for="quote_msg">Your Message</label>
+<textarea name="quote_msg" id="quote_msg" cols="30" rows="10"></textarea>
+</div>
+</div>
+<div class="col-lg-12">
+<button type="submit" class="btn style1">Send Message<i class="flaticon-paper-plane"></i></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section> -->
+
+</div>
+
+
+<footer class="footer-wrap bg-spring-wood">
+<div class="footer-shape-1"></div>
+<img src="assets/img/tub-5.png" alt="Image" class="footer-shape-2 lg-none">
+<div class="footer-top">
+<div class="container">
+<div class="row pt-800 pb-95">
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+    </div>
+    </div>
+
+<div class="footer-bottom">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-7">
+<p class="copyright-text">
+<i class="ri-copyright-line"></i><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> <a href="index.html">Guze</a>. All Rights Reserved By <a href="https://hibootstrap.com/" target="_blank">HiBootstrap</a>
+</p>
+</div>
+<div class="col-lg-6 col-md-5">
+<ul class="footer-bottom-menu list-style">
+<li><a target="_blank" href="terms-of-service.html">Terms &amp; Conditions</a></li>
+<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+
+<script src='{% static "assets/js/jquery.min.js" %}'></script>
+<script src='{% static "assets/js/bootstrap.bundle.min.js" %}'></script>
+<script src='{% static "assets/js/form-validator.min.js" %}'></script>
+<script src='{% static "assets/js/contact-form-script.js" %}'></script>
+<script src='{% static "assets/js/aos.js"  %}'></script>
+<script src='{% static "assets/js/owl.carousel.min.js" %}'></script>
+<script src='{% static "assets/js/swiper-min.js" %}'></script>
+<script src='{% static "assets/js/jquery-magnific-popup.js" %}'></script>
+<script src='{% static "assets/js/fancybox.js" %}'></script>
+<script src='{% static "assets/js/odometer.min.js" %}'></script>
+<script src='{% static "assets/js/progressbar.min.js" %}'></script>
+<script src='{% static "assets/js/jquery.appear.js" %}'></script>
+<script src='{% static "assets/js/tweenmax.min.js" %}'></script>
+<script src='{% static "assets/js/main.js" %}'></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/guze/default/get-a-quote.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:44 GMT -->
+</html>

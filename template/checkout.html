@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    {% load static %}
+
+<!-- Mirrored from templates.hibootstrap.com/Root your Garden/default/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:54 GMT -->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href='{% static "assets/css/bootstrap.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/flaticon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/remixicon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/owl.carousel.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/swiper-min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/magnific-popup.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/fancybox.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/odometer.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/aos.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/responsive.css" %}'>
+<title>Root your Garden - Landscaping & Gardening </title>
+<link rel="icon" type="image/png" href='{% static "assets/img/favicon.png" %}'>
+</head>
+<body>
+
+<div class="preloader js-preloader">
+<img src='{% static "assets/img/preloader.gif" %}' alt="Image">
+</div>
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="page-wrapper">
+
+<header class="header-wrap style2">
+<div class="container">
+<div class="header-top">
+<div class="close-header-top xl-none">
+<button type="button">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="row align-items-center">
+
+<div class="col-xl-12 col-lg-12">
+<div class="header-top-right">
+<div class="select-lang">
+<i class="ri-earth-fill"></i>
+<div class="navbar-option-item navbar-language dropdown language-option">
+<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="lang-name"></span>
+</button>
+<div class="dropdown-menu language-dropdown-menu">
+<a class="dropdown-item" href="#">
+<img src='{% static "assets/img/uk.png" %}' alt="flag">
+English
+</a>
+
+</div>
+</div>
+</div>
+<ul class="social-profile style1 list-style">
+<li>
+<a target="_blank" href="https://facebook.com/">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://linkedin.com/">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header-bottom">
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="index.html">
+<img class="logo-light" src='{% static "assets/img/logo1.PNG" %}' alt="logo">
+<img class="logo-dark" src='{% static "assets/img/logo-white.png" %}' alt="logo">
+</a>
+<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+<div class="menu-close xl-none">
+<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+</div>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a href="{% url 'index' %}" class="nav-link">
+Home
+<!-- <i class="ri-arrow-down-s-fill"></i> -->
+</a>
+
+</li>
+<li class="nav-item">
+<a href="{% url 'abt' %}" class="nav-link active">
+About Us
+</a>
+</li>
+<li class="nav-item">
+<a href="{% url 'ser' %}" class="nav-link">
+Services
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="service-one.html" class="nav-link">Terrace Garden</a>
+</li>
+<li class="nav-item">
+<a href="service-two.html" class="nav-link">Indoor Garden</a>
+</li>
+<li class="nav-item">
+<a href="service-details.html" class="nav-link">Open Area Garden</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+    <a href="shop.html" class="nav-link dropdown-toggle">
+    Shop
+    <i class="bx bx-plus"></i>
+    </a>
+    <ul class="dropdown-menu">
+        <li class="nav-item">
+        <a href="{% url 'cart' %}" class="nav-link">Cart</a>
+        </li>
+        <li class="nav-item">
+          <a href="{% url 'viewbookings' %}" class="nav-link">View Booking</a>
+          </li>
+        <li class="nav-item">
+        <a href="{% url 'checkout' %}" class="nav-link">Checkout</a>
+        </li>
+        </ul>
+        </li>
+<!-- <li class="nav-item">
+<a href="#" class="nav-link">
+Projects
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="project-one.html" class="nav-link">Project One</a>
+</li>
+<li class="nav-item">
+<a href="project-two.html" class="nav-link">Project Two</a>
+</li>
+<li class="nav-item">
+<a href="project-details.html" class="nav-link">Project Details</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Pages
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="get-a-quote.html" class="nav-link">Get A Quote</a>
+</li>
+<li class="nav-item">
+<a href="pricing.html" class="nav-link">Pricing Plan</a>
+</li>
+<li class="nav-item">
+<a href="team.html" class="nav-link">Team</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">FAQ</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">Testimonials</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+User Pages
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="login.html" class="nav-link">Login</a>
+</li>
+<li class="nav-item">
+<a href="register.html" class="nav-link">Register</a>
+</li>
+<li class="nav-item">
+<a href="recover-password.html" class="nav-link">Recover Password</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+</li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+</li>
+<li class="nav-item">
+<a href="error-404.html" class="nav-link">404 Error Page</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog Layout
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-no-sidebar.html" class="nav-link">Blog Grid</a>
+</li>
+<li class="nav-item">
+<a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+</li>
+</ul>
+</li>
+ <li class="nav-item">
+<a href="#" class="nav-link">
+Single Blog
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-details-no-sidebar.html" class="nav-link">Blog Details No Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-left-sidebar.html" class="nav-link">Blog Details Left Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-right-sidebar.html" class="nav-link">Blog Details Right Sidebar</a>
+</li>
+</ul>
+</li>
+</ul>
+</li> -->
+<li class="nav-item">
+<a href="{% url 'contact' %}" class="nav-link">Contact Us</a>
+</li>
+</ul>
+<div class="others-options  lg-none">
+<!-- <div class="option-item">
+<button class="searchbtn" type="button">
+<i class="flaticon-search-1"></i>
+</button>
+</div> -->
+<div class="option-item">
+<a href="{% url 'rev' %}" class="btn style1">Review and Feedback </a>
+</div>
+</div>
+</div>
+</nav>
+<!-- <div class="mobile-bar-wrap">
+<div class="mobile-top-bar xl-none">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<button class="searchbtn xl-none" type="button">
+<i class="flaticon-search-1"></i>
+</button>
+<div class="mobile-menu xl-none">
+<a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+</div>
+</div> -->
+</div>
+</div>
+<!-- <div class="search-area">
+<div class="container">
+<button type="button" class="close-searchbox">
+<i class="ri-close-line"></i>
+</button>
+<form action="#">
+<div class="form-group">
+<input type="search" placeholder="Search Here" autofocus>
+</div>
+</form>
+</div>
+</div> -->
+</header>
+
+
+<div class="content-wrapper">
+<section class="hero-wrap style1 hero-bg-1 bg-f">
+<div class="breadcrumb-wrap">
+<div class="container">
+<img src='{% static "assets/img/tub-2.png" %}' alt="Image" class="section-img style2">
+<div class="row align-items-center">
+<div class="col-md-5 col-sm-8">
+<div class="breadcrumb-title">
+<h2>Checkout Page</h2>
+<ul class="breadcrumb-menu list-style">
+<li><a href="{% url 'index' %}">Home </a></li>
+<li>Checkout</li>
+</ul>
+</div>
+</div>
+<div class="col-md-5 col-sm-4">
+<div class="breadcrumb-img">
+<img src='{% static "assets/img/breadcrumb/breadcrumb-img-6.png" %}' alt="Image">
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="quote-wrap style2 ptb-50">
+<div class="container">
+<div class="row align-center">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<!-- <div class="col-lg-10 offset-lg-1"> -->
+<div class="checkout-form-wrap">
+<div class="checkout-header">
+<form class="form-wrap quote-form" id="checkoutForm">
+<div class="content-title style1 mb-10">
+<h2>Billing Form</h2>           
+</div>
+<form method="post" action="{% url 'billingdetails' %}">
+{% csrf_token %}
+<div class="row">
+  {% for i in messages %}
+  <div class="alert alert-success" role="alert">
+ {{i}}
+</div>
+{% endfor %}
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+</div>
+</div>
+</div>
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>First Name <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="fname" value="{{ user.first_name }}">
+</div>
+</div>
+<hr>
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>Last Name <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="lname" value="{{ user.last_name }}">
+</div>
+</div>
+<hr>
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>State <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="state">
+</div>
+</div>
+<hr>
+                                           
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>Town / City <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="city">
+</div>
+</div>
+<hr>
+                                           
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>Street with Postcode / Zip <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="street">
+</div>
+</div>
+<hr>
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>Email Address <span class="required">*</span></h6></label>
+<input type="email" class="form-control" name="email" value="{{ user.email }}">
+</div>
+</div>
+<hr>
+<div class="col-lg-12 col-md-6">
+<div class="form-group">
+<label><h6>Phone <span class="required">*</span></h6></label>
+<input type="text" class="form-control" name="ph_pro">
+</div>
+</div>
+<hr>
+<div class="col-lg-12 col-md-12">
+<div class="form-group">
+<textarea name="details" cols="30" rows="5" placeholder="Order Notes" class="form-control"  ></textarea>
+</div>
+</div>
+<br>
+<div class="col-12">
+<button class="btn style2" type="submit">
+SUBMIT
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</form>
+        
+<section class="checkout-wrap ptb-100">
+<div class="container">
+<div class="row align-center">
+<div class="col-xl-6 offset-xl-3 col-lg-8 offset-lg-2">
+<div class="login-form-wrap">
+<div class="login-header">
+<div class="content-title style1 mb-10">  
+                               <!-- <form class="form-wrap quote-form" id="checkoutForm"> -->
+<h3>Choose Payment Method</h3>
+</div> 
+<div class="payment-box">
+<div class="payment-method">
+<p>
+<input type="radio" id="paypal" name="radio-group">
+<label for="paypal">PayPal</label>
+</p>
+<button class="btn style2" type="submit">
+<a href="{% url 'process_payment' %}">
+Place Order
+</a>
+</button>
+<hr>
+<p>
+<input type="radio" id="cash-on-delivery" name="radio-group">
+<label for="cash-on-delivery">Cash On Delivery</label>
+</p>
+</div>
+<button class="btn style2" type="submit">
+<a href="{% url 'cash_on_delivery' %}" >
+Place Order
+</a>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+                    
+                                
+
+<img src='{% static "assets/img/tub-2.png" %}'alt="Image" class="section-img style2 lg-none">
+
+
+</div>
+</section>
+
+<footer class="footer-wrap bg-spring-wood">
+<div class="footer-shape-1"></div>
+<img src='{% static "assets/img/tub-5.png" %}'alt="Image" class="footer-shape-2 lg-none">
+<div class="footer-top">
+<div class="container">
+<div class="row pt-800 pb-95">
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+
+</div>
+</div>
+
+
+<div class="footer-bottom">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-7">
+<p class="copyright-text">
+<i class="ri-copyright-line"></i><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> <a href="index.html">Root your Garden</a>.
+</p>
+</div>
+<div class="col-lg-6 col-md-5">
+<div class="row align-items-center"></div>
+<ul class="footer-bottom-menu list-style">
+<li><a target="_blank" href="terms-of-service.html">Terms &amp; Conditions</a></li>
+<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+
+<script src='{% static "assets/js/jquery.min.js" %}'></script>
+<script src='{% static "assets/js/bootstrap.bundle.min.js" %}'></script>
+<script src='{% static "assets/js/form-validator.min.js" %}'></script>
+<script src='{% static "assets/js/contact-form-script.js" %}'></script>
+<script src='{% static "assets/js/aos.js" %}'></script>
+<script src='{% static "assets/js/owl.carousel.min.js" %}'></script>
+<script src='{% static "assets/js/swiper-min.js" %}'></script>
+<script src='{% static "assets/js/jquery-magnific-popup.js" %}'></script>
+<script src='{% static "assets/js/fancybox.js" %}'></script>
+<script src='{% static "assets/js/odometer.min.js" %}'></script>
+<script src='{% static "assets/js/progressbar.min.js" %}'></script>
+<script src='{% static "assets/js/jquery.appear.js" %}'></script>
+<script src='{% static "assets/js/tweenmax.min.js" %}'></script>
+<script src='{% static "assets/js/main.js" %}'></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/Root your Garden/default/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:54 GMT -->
+</html>

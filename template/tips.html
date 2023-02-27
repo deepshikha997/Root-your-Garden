@@ -1,0 +1,56 @@
+<form method="post" action="{% url 'tip' %}" method ="Post">
+    {% csrf_token %}
+<div class="row">
+<div class="col-md-12 col-sm-12 ">
+{% for i in messages %}
+<div class="alert alert-success" role="alert">
+    {{i}}
+  </div> 
+{% endfor %}
+<div class="form-group">
+<label><h6>Select tips:</h6></label>
+<!-- <input type="hiden" name="nur" type="text"value="{{gar.id}}">  -->
+<select class="custom-select" name="ct" id="validationDefault04" required>
+<!-- {% for i in cate %}
+<option value="{{i.id}}">{{i.name_cat}}</option>
+{% endfor %} -->
+</select>
+</div>
+</div>
+</div>
+<hr>
+<h6>Plants:</h6>
+<div class="col-md-12 col-sm-12">
+<div class="form-group">
+    <input class="form-control" type="text" name="plants" placeholder="Plants">
+</div>
+</div>
+<hr>
+<div class="col-md-12 col-sm-12">
+<div class="form-group">
+<input class="form-control" type="tel" name="more_info" placeholder="Info">
+</div>
+</div>
+<hr>
+<!-- <div class="col-md-12 col-sm-12">
+<div class="form-group">
+<input class="form-control" type="text" name="descser1" placeholder="Service description">
+</div>
+</div> -->
+<hr>
+<!-- <div class="col-lg-4 col-md-4 col-sm-12">
+<label for="avatar"><h6>Choose Image:</h6></label>
+<input type="file" accept="image/*" name="imgs" id="file" onchange="loadFile(event)" >
+</div> -->
+<hr>
+<div class="col-12">
+<button class="btn style2" type="submit">
+SUBMIT
+</button>
+</div>
+<hr>
+<div class="col-md-12">
+<p class="mb-0">Already have an account? <a class="link style1" href="{% url 'lgt' %}">Login</a></p>
+</div>
+
+</form>

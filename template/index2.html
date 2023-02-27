@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="zxx">
+    {% load static %}
+
+<!-- Mirrored from templates.hibootstrap.com/Root your Garden/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:12 GMT -->
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href='{% static "assets/css/bootstrap.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/flaticon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/remixicon.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/owl.carousel.min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/swiper-min.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/magnific-popup.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/fancybox.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/odometer.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/aos.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/style.css" %}'>
+<link rel="stylesheet" href='{% static "assets/css/responsive.css" %}'>
+<title>Root your Garden - Landscaping & Gardening </title>
+<link rel="icon" type="image/png" href='{% static "assets/img/favicon.png" %}'>
+</head>
+<body>
+
+<div class="preloader js-preloader">
+<img src='{% static "assets/img/preloader.gif" %}' alt="Image">
+</div>
+
+
+<div class="switch-theme-mode">
+<label id="switch" class="switch">
+<input type="checkbox" onchange="toggleTheme()" id="slider">
+<span class="slider round"></span>
+</label>
+</div>
+
+
+<div class="page-wrapper">
+
+<header class="header-wrap style3">
+<div class="container">
+<div class="header-top">
+<div class="close-header-top xl-none">
+<button type="button">
+<i class="ri-close-line"></i>
+</button>
+</div>
+<div class="row align-items-center">
+
+<div class="col-xl-12 col-lg-12">
+<div class="header-top-right">
+<div class="select-lang">
+<i class="ri-earth-fill"></i>
+<div class="navbar-option-item navbar-language dropdown language-option">
+<button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<span class="lang-name"></span>
+</button>
+<div class="dropdown-menu language-dropdown-menu">
+<a class="dropdown-item" href="#">
+<img src='{% static "assets/img/uk.png" %}' alt="flag">
+English
+</a>
+
+</div>
+</div>
+</div>
+<ul class="social-profile style3 list-style">
+<li>
+<a target="_blank" href="https://facebook.com/">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://linkedin.com/">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+
+</ul>
+</div>
+
+</div>
+</div>
+</div>
+<div class="header-bottom">
+<nav class="navbar navbar-expand-md navbar-light">
+<a class="navbar-brand" href="index.html">
+<img class="logo-light" src='{% static "assets/img/logo1.PNG" %}' alt="logo">
+<img class="logo-dark" src='{% static "assets/img/logo-white.png" %}' alt="logo">
+</a>
+<div class="collapse navbar-collapse main-menu-wrap" id="navbarSupportedContent">
+<div class="menu-close xl-none">
+<a href="javascript:void(0)"> <i class="ri-close-line"></i></a>
+</div>
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a href="{% url 'index2' %}" class="nav-link">
+Home
+<!-- <i class="ri-arrow-down-s-fill"></i> -->
+</a>
+<!-- <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="index.html" class="nav-link">Home One</a>
+</li>
+<li class="nav-item">
+<a href="index-2.html" class="nav-link">Home Two</a>
+</li>
+<li class="nav-item">
+<a href="index-3.html" class="nav-link active">Home Three</a>
+</li>
+</ul> -->
+</li>
+<li class="nav-item">
+<a href="{% url 'abt' %}" class="nav-link">
+About
+</a>
+</li>
+<li class="nav-item">
+<a href="{% url 'garden' %}" class="nav-link">
+Services
+<!-- <i class="ri-arrow-down-s-fill"></i> -->
+</a>
+<!-- <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="service-one.html" class="nav-link">Service One</a>
+</li>
+<li class="nav-item">
+<a href="service-two.html" class="nav-link">Service Two</a>
+</li>
+<li class="nav-item">
+<a href="service-details.html" class="nav-link">Service Details</a>
+</li>
+</ul> -->
+</li>
+<!-- <li class="nav-item">
+<a href="#" class="nav-link">
+Projects
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="project-one.html" class="nav-link">Project One</a>
+</li>
+<li class="nav-item">
+<a href="project-two.html" class="nav-link">Project Two</a>
+</li>
+<li class="nav-item">
+<a href="project-details.html" class="nav-link">Project Details</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Pages
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="get-a-quote.html" class="nav-link">Get A Quote</a>
+</li>
+<li class="nav-item">
+<a href="pricing.html" class="nav-link">Pricing Plan</a>
+</li>
+<li class="nav-item">
+<a href="team.html" class="nav-link">Team</a>
+</li>
+<li class="nav-item">
+<a href="faq.html" class="nav-link">FAQ</a>
+</li>
+<li class="nav-item">
+<a href="testimonials.html" class="nav-link">Testimonials</a>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+User Pages
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+ <ul class="dropdown-menu">
+<li class="nav-item">
+<a href="login.html" class="nav-link">Login</a>
+</li>
+<li class="nav-item">
+<a href="register.html" class="nav-link">Register</a>
+</li>
+<li class="nav-item">
+<a href="recover-password.html" class="nav-link">Recover Password</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="terms-of-service.html" class="nav-link">Terms of Service</a>
+</li>
+<li class="nav-item">
+<a href="privacy-policy.html" class="nav-link">Privacy Policy</a>
+</li>
+<li class="nav-item">
+<a href="error-404.html" class="nav-link">404 Error Page</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog
+<i class="ri-arrow-down-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="#" class="nav-link">
+Blog Layout
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-no-sidebar.html" class="nav-link">Blog Grid</a>
+</li>
+<li class="nav-item">
+<a href="blog-left-sidebar.html" class="nav-link">Blog Left Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-right-sidebar.html" class="nav-link">Blog Right Sidebar</a>
+</li>
+</ul>
+</li>
+<li class="nav-item">
+<a href="#" class="nav-link">
+Single Blog
+<i class="ri-arrow-right-s-fill"></i>
+</a>
+<ul class="dropdown-menu">
+<li class="nav-item">
+<a href="blog-details-no-sidebar.html" class="nav-link">Blog Details No Sidebar</a>
+</li>
+<li class="nav-item">
+<a href="blog-details-left-sidebar.html" class="nav-link">Blog Details Left Sidebar</a>
+ </li>
+<li class="nav-item">
+<a href="blog-details-right-sidebar.html" class="nav-link">Blog Details Right Sidebar</a>
+</li>
+</ul>
+</li>
+</ul>
+</li> -->
+<li class="nav-item">
+    <a href="{% url 'contact' %}" class="nav-link">Contact</a>
+    </li>
+{% if user.is_authenticated %}
+
+
+     
+<li class="nav-item">
+    <a href="{% url 'pro' %}" class="nav-link">
+  <h6> HELLO {{ user.username }}</h6></a> </li>
+<li class="nav-item">
+    <a href="{% url 'lgn' %}" class="nav-link">Logout</a>      
+</li>
+
+{% else  %}
+
+<li class="nav-item">
+<a href="{% url 'garlgt' %}" class="nav-link">Login</a>
+</li>
+<li class="nav-item">
+<a href="{% url 'gardener' %}" class="nav-link">Register</a>
+</li>
+
+{% endif %}
+
+</ul>
+<div class="others-options  lg-none">
+<!-- <div class="option-item">
+<button class="searchbtn" type="button">
+<i class="flaticon-search-1"></i>
+</button>
+</div> -->
+<div class="option-item">
+<a href="{% url 'rev' %}" class="btn style5">Check Reviews </a>
+</div>
+</div>
+</div>
+</nav>
+<!-- <div class="mobile-bar-wrap">
+<div class="mobile-top-bar xl-none">
+<span></span>
+<span></span>
+<span></span>
+</div>
+<button class="searchbtn xl-none" type="button">
+<i class="flaticon-search-1"></i>
+</button>
+<div class="mobile-menu xl-none">
+<a href="javascript:void(0)"><i class="ri-menu-line"></i></a>
+</div>
+</div> -->
+</div>
+</div>
+<!-- <div class="search-area">
+<div class="container">
+<button type="button" class="close-searchbox">
+<i class="ri-close-line"></i>
+</button>
+<form action="#">
+<div class="form-group">
+<input type="search" placeholder="Search Here" autofocus>
+</div>
+</form>
+</div>
+</div> -->
+</header>
+
+
+<section class="hero-wrap style3 bg-spring-wood">
+<img src='{% static "assets/img/hero/hero-shape-1.png" %}' alt="Iamge" class="hero-shape-1 waving_left md-none">
+<img src='{% static "assets/img/hero/hero-shape-2.png" %}' alt="Iamge" class="hero-shape-2 moveVertical">
+<img src='{% static "assets/img/hero/hero-shape-3.png" %}' alt="Iamge" class="hero-shape-3">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6">
+<div class="hero-content">
+<span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">GARDEN LANDSCAPER</span>
+<h1 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">Smart Way To Design Your Garden</h1>
+<p data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">Garden are the best to make the house or any area very beautiful.</p>
+<div class="hero-btn">
+<a href="project-one.html" class="btn style6">Explore Garden <i class="flaticon-right-arrow-1"></i></a>
+<a href="service-one.html" class="btn style5">View Services <i class="flaticon-right-arrow-1"></i></a>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="hero-img-wrap">
+<img src='{% static "assets/img/hero/hero-img-7.png" %}' alt="Image" class="hero-img">
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="about-wrap style3 ptb-100 td-black">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6">
+<div class="about-img-wrap">
+<div class="about-bg-4 bg-f"></div>
+<div class="about-bg-5 bg-f"></div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="about-content">
+<div class="content-title style3 mb-30">
+<span>ABOUT US</span>
+<h2>Save The Plant And Create A Green Garden</h2>
+<p>The idea of green gardening is probably a no-brainer. After all, plants are inherently part of the natural world. The mere act of caring for plants in a garden is in itself eco-friendly. But there are lots of ways that we can make our gardens even greener by observing nature and working to incorporate and replicate natural processes in our activities. We can also reduce the amount of stuff we buy or the amount of stuff we throw away. Our gardens can become havens for threatened species or help to preserve genetic diversity. Read on to learn more ways that you can grow a greener garden.</p>
+</div>
+<div class="progressbar-wrap style2">
+<div class="progress-bar" data-percentage="95%">
+<h4 class="progress-title-holder">
+<span class="progress-title">Experience</span>
+<span class="progress-number-wrapper">
+<span class="progress-number-mark">
+<span class="percent"></span>
+</span>
+</span>
+</h4>
+<div class="progress-content-outter">
+<div class="progress-content">
+<div class="amet"></div>
+</div>
+</div>
+</div>
+<div class="progress-bar" data-percentage="85%">
+<h4 class="progress-title-holder clearfix">
+<span class="progress-title">Planning</span>
+<span class="progress-number-wrapper">
+<span class="progress-number-mark">
+<span class="percent"></span>
+</span>
+</span>
+</h4>
+<div class="progress-content-outter">
+<div class="progress-content"></div>
+</div>
+</div>
+<div class="progress-bar" data-percentage="90%">
+<h4 class="progress-title-holder clearfix">
+<span class="progress-title">Ecology</span>
+<span class="progress-number-wrapper">
+<span class="progress-number-mark">
+<span class="percent"></span>
+</span>
+</span>
+</h4>
+<div class="progress-content-outter">
+<div class="progress-content"></div>
+</div>
+</div>
+</div>
+<a href="about.html" class="btn style6">Explore More <i class="flaticon-right-arrow-1"></i></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="service-wrap ptb-100 bg-spring-wood">
+<div class="container">
+<div class="row">
+<div class="col-xl-6 offset-xl-3 col-lg-10 offset-lg-1">
+<div class="section-title style3 text-center mb-50">
+<span>WHAT WE DO</span>
+<h2>Explore Our Best Offer For Gardening</h2>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-landscape"></i></span>
+Landscaping
+</a>
+</h3>
+<p>The land is proper for open area check land is accurate or not and set according to the requirements.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-plant-1"></i></span>
+Pruning Plants
+</a>
+</h3>
+<p>Plants care is require by the gardener so gardener helps in providing the plnats care services in this platform.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div>
+<!-- <div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-park"></i></span>
+Outdoor Garden
+</a>
+</h3>
+<p>Lorem ipsum dolor sit amet adip elitionus repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div> -->
+<!-- <div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-seeding-1"></i></span>
+Design &amp; Planting
+</a>
+</h3>
+<p>Lorem ipsum dolor sit amet adip elitionus repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div> -->
+<!-- <div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-shovel"></i></span>
+Soil Preparation
+</a>
+</h3>
+<p>Lorem ipsum dolor sit amet adip elitionus repellat tetur delni vel quam aliq earum explibo dolor eme fugiat enim illumon.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div> -->
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="service-card style3">
+<div class="service-info">
+<h3 class="service-title">
+<a href="service-details.html">
+<span><i class="flaticon-watering-can"></i></span>
+Watering Garden
+</a>
+</h3>
+<p>The about of water required in the plants and soil care is need.This services says about the watering the garden.</p>
+<a href="service-details.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<div class="row mt-10">
+<div class="col-xl-12 text-center">
+<p class="mb-0">Explore Our Gardening Services <a href="service-one.html" class="link style1">View All Services <i class="flaticon-right-arrow-1"></i></a></p>
+</div>
+</div>
+</div>
+</section>
+
+
+<div class="counter-wrap counter-bg-1 bg-f ptb-100">
+<div class="overlay bg-timber-green op-8"></div>
+<div class="container">
+<div class="counter-card-wrap style3">
+<img src='{% static "assets/img/tub-6.png" %}'alt="Image" class="counter-shape-3 md-none">
+<div class="counter-shape-2"></div>
+<div class="counter-card">
+<span class="counter-icon">
+<i class="flaticon-rate"></i>
+</span>
+<div class="counter-text">
+<h2 class="counter-num">
+<span class="odometer" data-count="300"></span>
+<span class="target">+</span>
+</h2>
+<p>Happy Clients</p>
+</div>
+</div>
+<div class="counter-card">
+<span class="counter-icon">
+<i class="flaticon-nature"></i>
+</span>
+<div class="counter-text">
+<h2 class="counter-num">
+<span class="odometer" data-count="1500"></span>
+<span class="target">+</span>
+</h2>
+<p>Plants Planted</p>
+</div>
+</div>
+<div class="counter-card">
+<span class="counter-icon">
+<i class="flaticon-sapling"></i>
+</span>
+<div class="counter-text">
+<h2 class="counter-num">
+<span class="odometer" data-count="12"></span>
+<span class="target">+</span>
+</h2>
+<p>Years Experience </p>
+</div>
+</div>
+<div class="counter-card">
+<span class="counter-icon">
+<i class="flaticon-badge"></i>
+</span>
+<div class="counter-text">
+<h2 class="counter-num">
+<span class="odometer" data-count="70"></span>
+<span class="target">+</span>
+</h2>
+<p>Best Gardeners</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<section class="why-choose-wrap style3 ptb-100">
+<div class="container">
+<div class="row gx-5 align-items-center">
+<div class="col-lg-6">
+<div class="wh-content">
+<div class="content-title style3 mb-25">
+<span>WHY CHOOSE US</span>
+<h2>Gardening Is A Step Toward A Healthy Life</h2>
+<p>Garden is a place where you can relax and spend time with nature to explore variety of plant. a place where you can enjoy your own time.</p>
+</div>
+<div class="feature-item-wrap">
+<div class="feature-item">
+<span class="feature-icon">
+<i class="flaticon-garden"></i>
+</span>
+<div class="feature-text">
+<h3>Garden Design</h3>
+<p>Designing the garden according to your specification.</p>
+</div>
+</div>
+<div class="feature-item">
+<span class="feature-icon">
+<i class="flaticon-irrigation-system"></i>
+</span>
+<div class="feature-text">
+<h3>Tree Planting</h3>
+<p> Plants are the reason for living.</p>
+</div>
+</div>
+<div class="feature-item">
+<span class="feature-icon">
+<i class="flaticon-nature"></i>
+</span>
+<div class="feature-text">
+<h3>Tree Service</h3>
+<p>Pruning of tree branches,Watering,Trimming of leaves.</p>
+</div>
+</div>
+<div class="feature-item">
+
+
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="wh-img-wrap">
+<div class="wh-bg-4 bg-f"></div>
+<div class="wh-bg-5 bg-f"></div>
+<div class="wh-bg-6 bg-f"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="blog-wrap ptb-100">
+<div class="container">
+<div class="section-title style3 text-center mb-50">
+<span>OUR NEWS &amp; ARTICLES</span>
+<h2>Popular Articles &amp; Tips</h2>
+</div>
+<div class="row justify-content-center">
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="blog-card style3">
+<div class="blog-img">
+<img src='{% static "assets/img/blog/blog-1.jpg" %}'alt="Image">
+</div>
+<div class="blog-info">
+<ul class="blog-metainfo  list-style">
+<li><i class="flaticon-calendar"></i><a href="posts-by-date.html">Oct 01, 2021</a></li>
+<li><i class="flaticon-chat-1"></i>No Comment</li>
+</ul>
+<h3><a href="blog-details-right-sidebar.html">Summer Crop Nutrition &amp; Fertilizer Requirement</a></h3>
+<a href="blog-details-right-sidebar.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="blog-card style3">
+<div class="blog-img">
+<img src='{% static "assets/img/blog/blog-2.jpg" %}'alt="Image">
+</div>
+<div class="blog-info">
+<ul class="blog-metainfo  list-style">
+<li><i class="flaticon-calendar"></i><a href="posts-by-date.html">Sep 22, 2021</a></li>
+<li><i class="flaticon-chat-1"></i>1 Comment</li>
+</ul>
+<h3><a href="blog-details-right-sidebar.html">Keeping Rodents &amp; More Out Of Your Lawns</a></h3>
+<a href="blog-details-right-sidebar.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+</div>
+<div class="col-xl-4 col-lg-6 col-md-6">
+<div class="blog-card style3">
+<div class="blog-img">
+<img src='{% static "assets/img/blog/blog-3.jpg" %}'alt="Image">
+</div>
+<div class="blog-info">
+<ul class="blog-metainfo  list-style">
+<li><i class="flaticon-calendar"></i><a href="posts-by-date.html">Sep 15, 2021</a></li>
+<li><i class="flaticon-chat-1"></i>No Comment</li>
+</ul>
+<h3><a href="blog-details-right-sidebar.html">Complete Solution For Your Garden Design</a></h3>
+<a href="blog-details-right-sidebar.html" class="link style3">Learn More
+<span><i class="flaticon-right-arrow-1"></i></span>
+</a>
+</div>
+</div>
+ </div>
+</div>
+<div class="row mt-10">
+<div class="col-xl-12 text-center">
+<p class="mb-0">Let's Go Green Together <a href="blog-right-sideabr.html" class="link style1">View More Blogs <i class="flaticon-right-arrow-1"></i></a></p>
+</div>
+</div>
+</div>
+</section>
+
+
+<footer class="footer-wrap bg-spring-wood">
+<div class="footer-shape-1"></div>
+<img src='{% static "assets/img/tub-5.png" %}'alt="Image" class="footer-shape-2 lg-none">
+<div class="footer-top">
+<div class="container">
+<div class="row pt-100 pb-75">
+<div class="col-xl-4 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+<a href="index.html" class="footer-logo">
+<img class="logo-light" src='{% static "assets/img/logo1.PNG" %}'alt="Image">
+<img class="logo-dark" src='{% static "assets/img/logo-white.png" %}'alt="Image">
+</a>
+
+<div class="social-link">
+<h6>Follow Us:</h6>
+<ul class="social-profile list-style style1">
+<li>
+<a target="_blank" href="https://facebook.com/">
+<i class="ri-facebook-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://twitter.com/">
+<i class="ri-twitter-fill"></i>
+</a>
+</li>
+<li>
+<a target="_blank" href="https://linkedin.com/">
+<i class="ri-linkedin-fill"></i>
+</a>
+</li>
+
+</ul>
+</div>
+</div>
+</div>
+<div class="col-xl-2 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Company</h3>
+<ul class="footer-menu list-style">
+<li>
+<a href="about.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+About Us
+</a>
+ </li>
+<li>
+<a href="project-one.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Our Projects
+</a>
+</li>
+<li>
+<a href="team.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Our Team
+</a>
+</li>
+<li>
+<a href="get-a-quote.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Get A Quote
+</a>
+</li>
+<li>
+<a href="blog-left-sidebar.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Latest News
+</a>
+</li>
+<li>
+<a href="contact.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Contact Us
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 ps-xl-5">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Services</h3>
+<ul class="footer-menu list-style">
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Family Garden
+</a>
+</li>
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Contemporary Garden
+</a>
+</li>
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Roof Garden
+</a>
+</li>
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Commercial Garden
+</a>
+</li>
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Planting Trees
+</a>
+</li>
+<li>
+<a href="service-details.html" target="_blank">
+<i class="ri-arrow-right-s-fill"></i>
+Grass Cutting
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="col-xl-3 col-lg-6 col-md-6 col-sm-6">
+<div class="footer-widget">
+<h3 class="footer-widget-title">Get In Touch</h3>
+<ul class="contact-info list-style">
+<li>
+<i class="flaticon-maps-and-flags"></i>
+<h6>Location</h6>
+<p>C70 AB sima niwas Diyan residency</p>
+</li>
+<li>
+<i class="flaticon-email-2"></i>
+<h6>Email</h6>
+<a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#94fdfaf2fbd4f3e1eef1baf7fbf9"><span class="__cf_email__" data-cfemail="92fbfcf4fdd2f5e7e8f7bcf1fdff">rootyourgarden@gmail.com</span></a>
+</li>
+<li>
+<i class="flaticon-call"></i>
+<h6>Phone</h6>
+<a href="tel:13454567877">6394777137</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-lg-6 col-md-7">
+<p class="copyright-text">
+<i class="ri-copyright-line"></i><script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>document.write(new Date().getFullYear())</script> <a href="index.html">Root your Garden</a>. 
+</p>
+</div>
+<div class="col-lg-6 col-md-5">
+<ul class="footer-bottom-menu list-style">
+<li><a target="_blank" href="terms-of-service.html">Terms &amp; Conditions</a></li>
+<li><a target="_blank" href="privacy-policy.html">Privacy Policy</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</footer>
+
+</div>
+
+
+<a href="javascript:void(0)" class="back-to-top bounce"><i class="ri-arrow-up-s-line"></i></a>
+
+
+<script src='{% static "assets/js/jquery.min.js" %}'></script>
+<script src='{% static "assets/js/bootstrap.bundle.min.js" %}'></script>
+<script src='{% static "assets/js/form-validator.min.js" %}'></script>
+<script src='{% static "assets/js/contact-form-script.js" %}'></script>
+<script src='{% static "assets/js/aos.js" %}'></script>
+<script src='{% static "assets/js/owl.carousel.min.js" %}'></script>
+<script src='{% static "assets/js/swiper-min.js" %}'></script>
+<script src='{% static "assets/js/jquery-magnific-popup.js" %}'></script>
+<script src='{% static "assets/js/fancybox.js" %}'></script>
+<script src='{% static "assets/js/odometer.min.js" %}'></script>
+<script src='{% static "assets/js/progressbar.min.js" %}'></script>
+<script src='{% static "assets/js/jquery.appear.js" %}'></script>
+<script src='{% static "assets/js/tweenmax.min.js" %}'></script>
+<script src='{% static "assets/js/main.js" %}'></script>
+</body>
+
+<!-- Mirrored from templates.hibootstrap.com/Root your Garden/default/index-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Apr 2022 12:25:30 GMT -->
+</html>
